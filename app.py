@@ -64,7 +64,7 @@ with tab1:
     
     if data_source_mode == "Yahoo Finance (Spot/Futures)":
         ticker = "HG=F" if "Rame" in metal_choice else "ALI=F"
-        st.info(Querying live feed per il ticker ufficiale: `{ticker}` tramite Yahoo Finance...)
+        st.info(f"Querying live feed per il ticker ufficiale: `{ticker}` tramite Yahoo Finance...")
         
         df_live = load_yahoo_data(ticker)
         
